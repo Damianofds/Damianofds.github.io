@@ -1,4 +1,4 @@
-var HOST = "192.168.58.143:3000"
+var URL = "http://52.10.21.162/contact-form"
 
 $(function() {
 
@@ -23,7 +23,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "http://" + HOST + "/sendMail",
+                url: URL,
                 type: "POST",
                 data: {
                     name: name,
