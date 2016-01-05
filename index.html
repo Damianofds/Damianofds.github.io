@@ -25,7 +25,7 @@
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
-
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body id="page-top" class="index">
@@ -423,18 +423,20 @@
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-md-12 floating-label-form-group controls">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-md-12 floating-label-form-group controls">
                                 <label>Message</label>
                                 <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
+                        <div class="row control-group">
+                            <div class="form-group col-md-12 controls text-center">
+                                <input type="checkbox" class="form-control" id="ccopy" checked="checked" value="checked"><p>Send me a carbon copy of the message</p>
+                            </div>
+                        </div>
+                        
+                        <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha">
+                        <div class="g-recaptcha" data-sitekey="6LeHfhQTAAAAAJhMmTVvO5fvK0flUGQF-wWwXs96"></div>
+                        
                         <br>
                         <div id="success"></div>
                         <div class="row">

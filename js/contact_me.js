@@ -1,3 +1,5 @@
+var HOST = "192.168.58.143:3000"
+
 $(function() {
 
     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
@@ -13,7 +15,7 @@ $(function() {
             // get values from FORM
             var name = $("input#name").val();
             var email = $("input#email").val();
-            var phone = $("input#phone").val();
+            var ccopy = $("input#ccopy").is(':checked') ? "checked" : "";
             var message = $("textarea#message").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
@@ -21,13 +23,13 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "http://" + HOST + "/sendMail",
                 type: "POST",
                 data: {
                     name: name,
-                    phone: phone,
                     email: email,
-                    message: message
+                    text: message,
+                    carboncopy: ccopy
                 },
                 cache: false,
                 success: function() {
