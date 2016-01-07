@@ -17,7 +17,7 @@ $(function() {
             var email = $("input#email").val();
             var ccopy = $("input#ccopy").is(':checked') ? "checked" : "";
             var message = $("textarea#message").val();
-            var recaptcha-res = $("#g-recaptcha-response").val();
+            var recaptchares = $("#g-recaptcha-response").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
