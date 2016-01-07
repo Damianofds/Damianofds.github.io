@@ -31,7 +31,7 @@ $(function() {
                     email: email,
                     text: message,
                     carboncopy: ccopy,
-                    grecaptcharesponse: recaptcha-res
+                    grecaptcharesponse: recaptchares
                 },
                 cache: false,
                 success: function() {
