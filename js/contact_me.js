@@ -17,6 +17,7 @@ $(function() {
             var email = $("input#email").val();
             var ccopy = $("input#ccopy").is(':checked') ? "checked" : "";
             var message = $("textarea#message").val();
+            var hiddenRecaptcha = $("input#hiddenRecaptcha").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
@@ -29,7 +30,8 @@ $(function() {
                     name: name,
                     email: email,
                     text: message,
-                    carboncopy: ccopy
+                    carboncopy: ccopy,
+                    hiddenRecaptcha: hiddenRecaptcha
                 },
                 cache: false,
                 success: function() {
