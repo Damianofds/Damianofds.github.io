@@ -404,8 +404,6 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-md-12 floating-label-form-group controls">
@@ -429,13 +427,13 @@
                             </div>
                         </div>
                         <div class="row control-group">
-                            <div class="form-group col-md-12 controls text-center">
-                                <input type="checkbox" class="form-control" id="ccopy" checked="checked" value="checked"><p>Send me a carbon copy of the message</p>
+                            <div class="form-group col-md-6 controls">
+                                <div class="g-recaptcha" data-sitekey="6LeHfhQTAAAAAJhMmTVvO5fvK0flUGQF-wWwXs96"></div>
+                            </div>
+                            <div class="form-group col-md-6 controls text-center">
+                                <input type="checkbox" class="form-control" id="ccopy" checked="checked" value="checked"><p>Send me a copy of the message</p>
                             </div>
                         </div>
-                        
-                        <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha">
-                        <div class="g-recaptcha" data-sitekey="6LeHfhQTAAAAAJhMmTVvO5fvK0flUGQF-wWwXs96"></div>
                         
                         <br>
                         <div id="success"></div>
