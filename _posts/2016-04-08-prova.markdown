@@ -1,6 +1,0 @@
----
-published: true
-title: Prova
-layout: post
----
-Prova provantibus
