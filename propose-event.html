@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIMENTO SVEGLIA - Event Creation Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f4f4f4; line-height: 1.6;">
+  <h2 style="color: red; text-transform: uppercase; text-align: center;">>MOVIMENTO SVEGLIA - Event Creation Form</h2>
+    <div style="max-width: 800px; margin: 0 auto; background: white; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+        <h2 style="color: red; text-transform: uppercase; text-align: center;">⚠️ Precondition</h2>
+        <p style="color: #555; font-size: 14px;">
+            <strong>Before filling the request:</strong> You have to have your <strong>lu.ma</strong> and <strong>Zoom</strong> account set up and the two usernames.
+        </p>
+        
+        <form action="/events/propose" method="POST" style="margin-top: 20px;">
+            <h3 style="border-bottom: 2px solid #ddd; padding-bottom: 10px;">Fill Owner of Event User Info</h3>
+            
+            <label style="display: block; margin-bottom: 10px;">User Full Name</label>
+            <input type="text" name="userFullName" placeholder="Enter full name" 
+                   style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;" required>
+
+            <label style="display: block; margin-bottom: 10px;">User Email Address</label>
+            <input type="email" name="userEmail" placeholder="Enter email address" 
+                   style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;" required>
+
+            <label style="display: block; margin-bottom: 10px;">User Role</label>
+            <input type="text" name="userRole" placeholder="Enter role" 
+                   style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;" required>
+
+            <label style="display: block; margin-bottom: 10px;">User Luma Account Name</label>
+            <input type="text" name="userLumaAccount" placeholder="Enter Luma account name" 
+                   style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;" required>
+
+            <label style="display: block; margin-bottom: 10px;">User Zoom Account Name</label>
+            <input type="text" name="userZoomAccount" placeholder="Enter Zoom account name" 
+                   style="width: 100%; padding: 8px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px;" required>
+
+            <h3 style="border-bottom: 2px solid #ddd; padding-bottom: 10px;">Fill Event Info</h3>
+            
+            <label style="display: block; margin-bottom: 10px;">Event Name</label>
+            <input type="text" name="eventName" placeholder="Enter event name" 
+                   style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;" required>
+
+            <label style="display: block; margin-bottom: 10px;">Event Description</label>
+            <textarea name="eventDescription" placeholder="Enter event description" 
+                      style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;" rows="4" required></textarea>
+
+            <label style="display: block; margin-bottom: 10px;">Event Place</label>
+            <input type="text" name="eventPlace" placeholder="Enter event place" 
+                   style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;" required>
+
+            <label style="display: block; margin-bottom: 10px;">Event Day</label>
+            <input type="date" name="eventDay" 
+                   style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;" required>
+
+            <label style="display: block; margin-bottom: 10px;">Event Timezone</label>
+            <input type="text" name="eventTimezone" placeholder="Enter event timezone (e.g., UTC, EST)" 
+                   style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;" required>
+
+            <label style="display: block; margin-bottom: 10px;">Event Time</label>
+            <input type="time" name="eventTime" 
+                   style="width: 100%; padding: 8px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px;" required>
+
+            <button type="submit" 
+                    style="width: 100%; padding: 12px; background-color: #28a745; color: white; font-size: 16px; border: none; border-radius: 4px; cursor: pointer;">
+                Submit New Event Creation Request
+            </button>
+        </form>
+    </div>
+
+</body>
+</html>
